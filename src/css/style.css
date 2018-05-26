@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Tajawal:400,700");
+body {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 16px;
+  color: #444;
+}
+.App {
+  text-align: center;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: #fff;
+}
+.App-title {
+  font-size: 1.5em;
+}
+.App-intro {
+  font-size: large;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+}
+.container-dragonball {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #999;
+  -webkit-box-shadow: 5px 8px 5px 0px #e0e0e0;
+  -moz-box-shadow: 5px 8px 5px 0px #e0e0e0;
+  box-shadow: 5px 8px 5px 0px #e0e0e0;
+  border-radius: 20px;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+.container-dragonball img {
+  max-width: 300px;
+  border-radius: 100%;
+}
+.container-dragonball :hover {
+  cursor: pointer;
+}
+.dragonball-stats {
+  display: grid;
+  grid-gap: 10px;
+  padding: 20px;
+}
+.dragonball-stats p {
+  font-size: 20px;
+}
+.dragonball-img {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+}
+ul .hover {
+  background: #f2f2f2;
+  border-radius: 20px;
+}
+@-moz-keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
