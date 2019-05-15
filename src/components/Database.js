@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DatabaseList from './DatabaseList';
 
 class Database extends Component {
   render() {
@@ -6,8 +7,8 @@ class Database extends Component {
       <div>
         <h2>Database</h2>
         <div>
-          <ul>{this.props.database.map(theUsers => <li key={theUsers.id}>{theUsers.name}</li>)}</ul>
-        </div>
+            <DatabaseList dbz={this.props.database} />
+          </div>
       </div>
     );
   }
