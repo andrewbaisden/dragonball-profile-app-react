@@ -15,11 +15,11 @@
     "stylus": "^0.54.7"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
     "styles": "stylus -w ./src/css/style.styl -o ./src/css/style.css",
-    "dev": "concurrently \"npm run start \" \"npm run styles\"",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider concurrently \"npm run start\" \"npm run styles\"",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "test": "NODE_OPTIONS=--openssl-legacy-provider react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
